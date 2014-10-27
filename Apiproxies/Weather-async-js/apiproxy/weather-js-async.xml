@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="weather-js-async">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1414309657411</CreatedAt>
+    <CreatedBy>bharathkumar@apigee.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>weather-js-async</DisplayName>
+    <LastModifiedAt>1414311907324</LastModifiedAt>
+    <LastModifiedBy>bharathkumar@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>JsonToXml</Policy>
+        <Policy>ResponseCache</Policy>
+        <Policy>__collect-statistics-request__</Policy>
+        <Policy>__extract-statistics-request__</Policy>
+        <Policy>assembleResponse</Policy>
+        <Policy>getWeatherData</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://assembleResponse.js</Resource>
+        <Resource>jsc://getWeatherData.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

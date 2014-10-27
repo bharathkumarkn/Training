@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="true" enabled="true" name="__extract-statistics-request__">
+    <!-- Created by the Custom Analytics Collection tool on: Sun Oct 26 2014 13:04:44 GMT+0530 (IST) -->
+    <DisplayName>Extract Statistics Request</DisplayName>
+    <URIPath name="_uriPath">
+        <Pattern ignoreCase="true">&#x2F;get{_uriPath}</Pattern>
+    </URIPath>
+</ExtractVariables>
