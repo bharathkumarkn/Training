@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-Icons-for-IconID">
+    <DisplayName>Extract Icons for IconID</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="body">
+            <JSONPath>$.Envelope.Body.GetWeatherInformationResponse.GetWeatherInformationResult.WeatherDescription[?(@.WeatherID == {iconid})][0]</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source>response</Source>
+    <VariablePrefix>icons</VariablePrefix>
+</ExtractVariables>
