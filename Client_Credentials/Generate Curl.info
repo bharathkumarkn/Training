@@ -1,0 +1,1 @@
+curl 'http://apigee-edu-test.apigee.net/v1/cc/oauth_cc/accesstoken?grant_type=client_credentials' -X POST -d 'client_id=MLmItC5DfKYbo4eo5SAFbMyeo3ADvBg9&client_secret=DF3tGbGcjZFJAqVN'
