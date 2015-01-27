@@ -23,12 +23,12 @@
         <Response>
             <Step>
                 <FaultRules/>
-                <Name>JsonToXml</Name>
-                <Condition>(request.header.accept ~~ ".*/xml.*")</Condition>
+                <Name>ResponseCache</Name>
             </Step>
             <Step>
                 <FaultRules/>
-                <Name>Response-Cache-1</Name>
+                <Name>JsonToXml</Name>
+                <Condition>(request.header.accept ~~ ".*/xml.*")</Condition>
             </Step>
         </Response>
     </PostFlow>

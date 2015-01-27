@@ -4,17 +4,17 @@
 //  httpClient returns an exchange object that will contain the HTTP response. . . when it arrives
 //
 
-var paloAlto = httpClient.get('https://weather.yahooapis.com/forecastrss?w=2467861'); 
+var paloAlto = httpClient.get('http://weather.yahooapis.com/forecastrss?w=2467861'); 
 context.session['paloAlto'] = paloAlto;
 
-var anchorage = httpClient.get('https://weather.yahooapis.com/forecastrss?w=2354490'); 
+var anchorage = httpClient.get('http://weather.yahooapis.com/forecastrss?w=2354490'); 
 context.session['anchorage'] = anchorage;
 
-var honolulu = httpClient.get('https://weather.yahooapis.com/forecastrss?w=2423945');
+var honolulu = httpClient.get('http://weather.yahooapis.com/forecastrss?w=2423945');
 context.session['honolulu'] = honolulu;
 
-var newyork = httpClient.get('https://weather.yahooapis.com/forecastrss?w=2459115');
+var newyork = httpClient.get('http://weather.yahooapis.com/forecastrss?w=2459115');
 context.session['newyork'] = newyork;
 
-var dublin = httpClient.get('https://weather.yahooapis.com/forecastrss?w=560743');
+var dublin = httpClient.get('http://weather.yahooapis.com/forecastrss?w=560743');
 context.session['dublin'] = dublin;

@@ -5,7 +5,7 @@
         <Request>
             <Step>
                 <FaultRules/>
-                <Name>Response-Cache-1</Name>
+                <Name>ResponseCache</Name>
             </Step>
         </Request>
         <Response/>
@@ -28,6 +28,10 @@
             <Step>
                 <FaultRules/>
                 <Name>__extract-statistics-request__</Name>
+            </Step>
+            <Step>
+                <FaultRules/>
+                <Name>__collect-statistics-request__</Name>
             </Step>
         </Request>
         <Response/>

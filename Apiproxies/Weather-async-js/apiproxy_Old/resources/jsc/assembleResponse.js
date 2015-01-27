@@ -27,7 +27,6 @@ responseJson.weatherData = json;
 
 // update the response content, providing a pretty print
 response.content = JSON.stringify(responseJson, null, 2);
-context.setVariable("myPayload", JSON.stringify(responseJson, null, 2));
 
 
 

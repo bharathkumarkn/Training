@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ResponseCache async="false" continueOnError="false" enabled="true" name="ResponseCache">
+    <DisplayName>ResponseCache</DisplayName>
+    <CacheKey>
+        <Prefix/>
+        <KeyFragment ref="proxy.pathsuffix" type="string"/>
+      <KeyFragment ref="request.queryparam.cachekeyparam" type="string"/>
+    </CacheKey>
+    <Scope>Exclusive</Scope>
+  <CacheResource>weather-js-async</CacheResource>
+  <SkipCacheLookup>(request.header.skip-cache == "true")</SkipCacheLookup>
+  <SkipCachePopulation>(request.header.skip-cache == "true")</SkipCachePopulation>
+</ResponseCache>
